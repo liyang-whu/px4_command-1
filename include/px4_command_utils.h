@@ -217,7 +217,7 @@ Eigen::Vector3f cal_pos_error(const px4_command::DroneState& _DroneState, const 
 
     if(_Reference_State.Sub_mode == command_to_mavros::XY_POS_Z_VEL || _Reference_State.Sub_mode == command_to_mavros::XY_VEL_Z_VEL) 
     {
-        pos_error[3] = 0;
+        pos_error[2] = 0;
     }
 
     return pos_error;
